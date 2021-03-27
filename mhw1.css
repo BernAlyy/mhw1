@@ -1,0 +1,154 @@
+header{
+	color: white;
+	background-image: url("Intestazione.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: 0px, 0px, 0px, 0px;
+	position:relative;
+	height:320px;
+	border-radius: 10px;
+}
+#overlay{
+	position: absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color:rgba(0, 0, 0, .3);
+	border-radius:10px;
+}
+h1.title{
+	position: absolute;
+	right:10%;
+	top: 150px;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size: 5.2em;
+	font-style:normal;
+	z-index:1;
+}
+#varlink{
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: flex;
+	flex-direction:column;
+	width:20%;
+	margin-left:5px;
+	font-size:1.5em;
+	font-style:normal;
+	font-weight:bold;
+}
+a{
+	cursor: pointer;
+	margin-bottom:4px;
+	z-index:1;
+}
+a:hover, a h4:hover{
+	background-color: #92a8d1;
+	color: white;
+	border: 2px solid white;
+	border-radius: 10px;
+}
+a h4:hover{
+	border: none;
+}
+#links{
+	display:flex;
+	justify-content: space-around;
+	margin-left:3%;
+	margin-top: 6%;
+}
+#content{
+	display:flex;
+	justify-content:space-around;
+	margin-top: 6%;
+	margin-left:10%;
+	margin-bottom: 10%;
+}
+#who,#offers,#choose,#headqs,#contacts{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+#content div,#links div{
+	width:90%;
+	border-radius:10px;
+}
+#content div{
+	width:65%;
+}
+#who div, #offers div, #choose div, #headqs div,#contacts div{
+	height: 200px;
+}
+#links a{
+	margin-right: 10%;
+}
+#who div{
+	background-image: url('ChiSiamo.jpg');
+	background-size: cover;
+}
+#offers div{
+	background-image: url('Offerte.jpg');
+	background-size: cover;
+}
+#choose div{
+	background-image: url('ScegliLaTuaVacanza.jpg');
+	background-size: cover;
+}
+#headqs div{
+	background-image: url('LeNostreSedi.jpg');
+	background-size: cover;
+}
+#contacts div{
+	background-image: url('Contatti.jpg');
+	background-size: cover;
+}
+h4, #content p{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-style:normal;
+	line-height:1.25em;
+	margin-bottom: 0.5px;
+	margin-top: 0.5px;
+}
+h4{
+	font-size: 1.5em;
+}
+#content p{
+	font-size: 0.9em;
+}
+footer{
+	display: flex;
+	justify-content: space-around;
+	align-items:center;
+	background-color: #613A43;
+	height: 145px;
+	color: white;
+	font-family:'Nanum Gothic', sans-serif;
+	font-style:italic;
+	font-size:1.5em;
+	border-radius: 5px;
+}
+@media(max-width:642px){
+	h1.title{
+		right:0%;
+		top:200px;
+		font-size: 3em;
+	}
+	#links, #content{
+		flex-direction: column;
+		align-items: center;
+		margin-left: 0px;
+	}
+	#who,#offers,#choose,#headqs,#contacts{
+		justify-content: space-between;
+		align-items: center;
+		
+	}
+	#content div, #links div{
+		width:65%;
+	}
+}
+@media(max-width:329px){
+	h1.title{
+		font-size: 2em;
+		top: 250px;
+	}
+}
